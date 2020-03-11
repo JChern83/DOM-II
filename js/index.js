@@ -138,4 +138,19 @@ window.onload= function (){
       event.target.style.background = 'pink';
     });
 
+    const buttonBig = document.querySelector('.btn1');
+    buttonBig.addEventListener("click", (event) => {
+        buttonBig.style.backgroundColor = "grey";
+        window.alert("Your Form is submited");
+    })
+
+    function logSelection(event) {
+        const log = document.getElementById('log');
+        const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+        log.textContent = `Lets go to: ${selection}`;
+      }
+      
+      const input = document.getElementById('input1');
+      input.addEventListener('select', logSelection);
+
 }

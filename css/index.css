@@ -354,6 +354,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10%;
   width: 50%;
   margin-left: 20%;
@@ -364,6 +365,7 @@ img {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  margin-top: 2%;
 }
 .home input[type=password] {
   display: flex;
@@ -371,4 +373,7 @@ img {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+.home #login {
+  margin-top: 2%;
 }
